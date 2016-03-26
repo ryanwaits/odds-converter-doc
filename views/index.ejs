@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='/css/style.css' />
+  </head>
+  <body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="https://github.com/ryanwaits/odds-converter" target="_blank"><i class="fa fa-github"><span>GitHub</span></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="https://node-os.com/images/nodejs.png" alt="node.js" width="175">
+            <h2 class="hero-heading">Easily convert betting odds to any format</h2>
+            <div class="hero-code">
+                <code>
+                    <span class="node">npm install</span>
+                    <span>odds-converter</span>
+                </code>
+            </div>
+        </section>
+        <section class="layout">
+            <section class="content content-center content-grid">
+                <article class="content-grid-item">
+                    <i class="fa fa-terminal"></i>
+                    <h4>Convert to any format</h4>
+                    <p>Including American, Decimal, or Fractional formats</p>
+                </article>
+                <div class="grid-item-code content-left">
+                    <code>
+                        <span class="node">var odds </span>
+                        <span>= require('odds-converter')</span><br>
+                        <p></p>
+                        <span class="node">odds</span><span>.decimal.toAmerican(2.25); // 125.00</span><br>
+                        <p></p>
+                        <span class="node">odds</span><span>.fraction.toAmerican(5,6); // -120</span><br>
+                        <p></p>
+                        <span class="node">odds</span><span>.american.toFractional(-125).simplify(); // (4/5)</span>
+                    </code>
+                </div>
+                <footer class="content-footer">
+                    <a href="https://github.com/ryanwaits/odds-converter" class="button" target="_blank">Full Documentation</a>
+                </footer> 
+            </section>
+        </section>
+    </main>
+    <footer class="footer-layout">
+        <section class="footer-content content-center">
+            <a href="#">
+                <i class="fa fa-hand-peace-o"></i>
+            </a>
+            <p>odds-converter is maintained by <a href="http://ryanwaits.com" target="_blank">ryanwaits</a></p>
+            <p>See my other projects or hire me to help build your product.</p>
+        </section>
+    </footer>
+  </body>
+</html>
